@@ -77,6 +77,13 @@ http://fr.farnell.com/bourns/crm1206-fx-10r0elf/resistance-1206-10r-1/dp/1865248
 1
 10
 
+resistor 68K
+R11
+http://fr.farnell.com/te-connectivity/crgh1206f68k/resistance-puissance-68k-0-5w-1/dp/2332165
+0.0375
+1
+10
+
 capacitor 6.8n
 C1
 http://fr.farnell.com/kemet/c1206c682j2gacauto/condensateur-mlcc-c0g-6800pf-200v/dp/2426898

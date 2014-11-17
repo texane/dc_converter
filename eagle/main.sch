@@ -13794,6 +13794,7 @@ by R. Vogg  15.March.2002</description>
 <text x="125.73" y="124.46" size="1.778" layer="97">TODO: select C3</text>
 <text x="45.72" y="128.27" size="1.778" layer="97">TODO: choose C4</text>
 <text x="125.73" y="116.84" size="1.778" layer="97">TODO: choose C5</text>
+<text x="16.51" y="53.34" size="1.778" layer="97">TODO: connect RUN to switch</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="83.82" y="80.01"/>
