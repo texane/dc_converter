@@ -1,0 +1,190 @@
+[ The need for DC conversion ]
+
+Off grid power sources are mainly 12V DC (car batteries, PV cells).
+My appliances need a different input voltage. My laptop requires
+a 19V DC source, and the BBB requires a 5V DC source. So, the basic
+need is to convert from 12V DC to both an greater and a lower voltage.
+
+I prefer not to use inverters, as it is difficult to have ones with
+good efficiency starting at 12V DC. It surely exists, and more
+explaination needed here.
+
+Linear regulator for down conversion should be avoided, as they
+dissipate according to p = ui. For small currents, this not an
+issue. But assuming the BBB and peripheral would consume 500mA,
+7 * 0.5 = 3.5 W would be dissipated which is far from negligeable.
+In fact, the 2 curves linear regulator versus boost converter
+efficiency must be plotted as a function of the consumed current
+and output input voltages (ldo efficiency = vout / vin).
+
+
+[ Requirements ]
+
+Conservative measures (using bench power supply) shows the laptop
+consumes 1.5A at 19V. With wifi and graphic stuffs, we can assume
+2A at 19V, or 40W. At 12V, 40W is 3.5A. Thus, we fix the up converter
+limit to 4A.
+
+The BBB will not consume more than 500mA at 5V, or 2.5W. At 12V,
+this is 210mA.
+
+We, thus are looking for converters which respect the following:
+v_in * i_in * eff  >= v_out * i_out
+v_in * i_in * eff  >= p_out
+i_in >= p_out / (v_in * eff) (1)
+where:
+v_in the input voltage in V
+i_in the input intensity in A
+p_out the output power in W
+eff the converter efficiency in percent
+
+Assuming an efficiency of 70% for the highest output current, and
+substituting our requirements:
+
+up converter:
+i_in >= 40 / (12 * 0.7)
+i_in >= 4.8
+thus, reuquirements are:
+i_in >= 4.8A
+v_in = 12V
+i_out >= 3.5A
+v_out = 19V
+eff >= 0.7%
+
+down converter:
+i_in >= 2.5 / (12 * 0.7)
+i_in >= 0.3
+thus, reuquirements are:
+i_in >= 0.3A
+v_in = 12V
+i_out >= 0.5A
+v_out = 5V
+eff >= 0.7%
+
+
+[ Features ]
+
+In addition to the previous requirements, the following features
+are considered:
+. selectable input voltage: 12V mandatory, 24V or 48V
+-> not implemented, assume 12V only. the circuit used could
+accomodate for 24V, but not 48V.
+
+. down conversion selectable output voltage in 3.4V, 5.1V or 9V
+either via switch or solder join. take into account the switch
+resistance when choosing the feedback resistor.
+
+. on off switch to turn off the module
+-> 2 possibilities: either directly turn off the input, or turn
+off the module using the IC power down feature. The advantage of
+turning off the module only is that the switch is not on the main
+power path. Thus, a low quality switch can be used.
+
+. output current monitor: not sure, can be external
+
+. power connectors: will be standard banana plugs as case output
+
+. casing: several possible cases, to accomodate for different
+needs.
+
+. prototype: order components for 2 modules first
+
+[ Electronics parts candidates ]
+
+[[ buck boost converters ]]
+
+[[[ LTC3789 ]]]
+http://www.linear.com/product/LTC3789
+http://www.linear.com/docs/30095
+http://www.linear.com/docs/41129
+http://fr.farnell.com/linear-technology/ltc3789egn-pbf/buck-boost-38vin-600khz-28ssop/dp/2102662
+see LTC3789 datasheet, design example section.
+
+This IC was used for 2 reasons:
+. first, the buck boost topology allows to cope with the multiple
+output requirement, without much loss in efficiency
+. second, the datasheet and corresponding application notes are
+very well done, covering every aspects from theory to end PCB
+design consideration and component choice.
+
+Disadvantages are the price (13 euros per IC) and the need for
+2 more external mosfets and a sense resistor. But all the ouput
+requirement fit on a single PCB.
+
+
+[[ up converter ]]
+
+[[[ lt1268ct ]]]
+http://fr.farnell.com/linear-technology/lt1268ct-pbf/regulateur-a-decoupage-7-5a/dp/1273704
+
+[[[ lt1270ct ]]]
+http://fr.farnell.com/linear-technology/lt1270ct-pbf/regulateur-a-decoupage-8a/dp/1273706
+
+[[[ lt1370ct ]]]
+http://fr.farnell.com/linear-technology/lt1370ct7-pbf/regulateur-a-decoupage-6a/dp/1273732
+
+[[[ lt3579efe ]]]
+http://fr.farnell.com/linear-technology/lt3579efe-pbf/boost-inverting-sync-6a-20tssop/dp/1839071
+
+[[[ ltc3784egn ]]]
+http://fr.farnell.com/linear-technology/ltc3784egn-pbf/convert-dc-dc-boost-900khz-ssop/dp/2406689
+
+[[[ tps55340pwp ]]]
+http://fr.farnell.com/texas-instruments/tps55340pwp/dc-dc-2-9-32v-5a-2-9-38v-14htssop/dp/2255011
+
+[[[ lm2587 ]]]
+http://fr.farnell.com/texas-instruments/lm2587s-adj-nopb/ic-dc-dc-converter-5a/dp/1469183
+http://fr.farnell.com/texas-instruments/lm2587t-adj-nopb/ic-flyback-regulator-115khz-to/dp/1564716
+
+[[[ lm2588 ]]]
+http://fr.farnell.com/texas-instruments/lm2588t-adj/regulateur-a-decoupage-5a-ajustable/dp/9493719
+http://fr.farnell.com/texas-instruments/lm2588s-adj-nopb/convert-dc-dc-boost-200khz-to-263/dp/2323492
+
+[[[ lm5122 ]]]
+http://fr.farnell.com/texas-instruments/lm5122mhe-nopb/circuit-integre/dp/2400934
+
+[[[ lt1070ct ]]]
+http://fr.farnell.com/linear-technology/lt1070ct-pbf/regulateur-a-decoupage-5a/dp/9559558
+
+[[[ lt1170ct ]]]
+http://fr.farnell.com/linear-technology/lt1170ct-06pbf/dc-dc-3-60vin-5a-100khz-5to220/dp/2238154
+
+[[[ mc33167tg ]]]
+http://fr.farnell.com/on-semiconductor/mc33167tg/regulateur-a-decoupage-5a/dp/9666877
+
+
+[ References ]
+
+[[ switched power supply application notes ]]
+http://www.nxp.com/documents/application_note/APPCHP2.pdf
+http://en.wikipedia.org/wiki/Buck_converter
+
+http://www.linear.com/docs/43921
+. gives guidelines as regard with:
+.. switching frequency
+.. output inductor
+.. mofset
+.. input output capacitors
+.. feedback loop
+. increasing the switching frequency requires smaller filtering
+components ie. L and C. but it increases the AC losses. if <10A
+the switching frequency is usually 100KHz to several MHz.
+. maximum peak to peak current is given by equation (14).
+
+[[ circuits ]]
+
+[[ buck down converter ICs ]]
+lm2596
+lm2678
+lm22679
+
+[[ multiple configurations ICs ]]
+lt1170
+
+[[ down converter products ]]
+http://www.amazon.com/dp/B00OT0EO7C?psc=1
+
+[[ up converter products ]]
+http://www.ebay.com/itm/DC-12V-to-19V-4A-76W-STEP-UP-DC-DC-Power-Converter-Regulator-/290822881442
+http://www.amazon.com/3-5-30V-4-0-30V-Booster-Converter-Regulator/dp/B008FLE7PA/ref=pd_sim_e_4?ie=UTF8&refRID=0MF31KEQNSKDX965N0TC
+http://www.miniinthebox.com/150w-step-up-boost-module_p877394.html?utm_source=mb_amazon&utm_medium=PCS&litb_from=paid_amazon&utm_campaign=4963&amazon%20=amazon-pads&on-amazon=on-amazon&publisher=www.amazon.com&pubpage=http%3A%2F%2Fwww.amazon.com%2F3-5-30V-4-0-30V-Booster-Converter-Regulator%2Fdp%2FB008FLE7PA%2Fref%3Dpd_sim_e_4%3Fie%3DUTF8%26refRID%3D0MF31KEQNSKDX965N0TC&PCS=cpc&SKU=M877394&CA_6C15C=620011720000692361
