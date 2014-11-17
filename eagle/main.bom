@@ -57,23 +57,16 @@ http://fr.farnell.com/multicomp/mc0125w12061121k/resistance-1206-121k-1/dp/21422
 5
 
 resistor 0.01
-R4,R9
+R4
 http://fr.farnell.com/ohmite/lvk12r010der/resistance-1206-kelvin-r01/dp/1462291
 0.634
-2
-4
+1
+3
 
 resistor 1K
 R5,R6
 http://fr.farnell.com/te-connectivity/crgh1206f1k0/resistance-puissance-1k0-0-5w-1/dp/2332141
 0.0364
-2
-10
-
-resistor 100
-R7,R8
-http://fr.farnell.com/vishay-draloric/crcw1206100rfkta/resistance-couche-epaisse/dp/1653049
-0.0557
 2
 10
 
