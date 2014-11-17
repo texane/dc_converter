@@ -1,0 +1,57 @@
+# lines:
+# component description
+# component identifier on PCB
+# ordering url
+# unit price (euros)
+# quantity required for one PCB
+# ordered quantity
+
+
+ltc3789egn
+U1
+http://fr.farnell.com/linear-technology/ltc3789egn-pbf/buck-boost-38vin-600khz-28ssop/dp/2102662
+12.87
+1
+2
+
+resistor 20K
+R1
+http://fr.farnell.com/bourns/cr1206-fx-2002elf/resistance-cms/dp/2333527
+0.053
+1
+5
+
+resistor 64K9
+R2_1
+http://fr.farnell.com/multicomp/mc0125w1206164k9/resistance-1206-64k9-1/dp/2142281
+0.0568
+1
+5
+
+resistor 110K
+R2_2
+http://fr.farnell.com/vishay-draloric/crcw1206110kfkea/resistance-couche-epaisse/dp/1653054
+0.0942
+1
+5
+
+resistor 280K
+R2_3
+http://fr.farnell.com/panasonic-electronic-components/erjp08f2803v/resis-couche-epaisse-280-kohm-0/dp/2327145
+0.055
+1
+25
+
+resistor 470K
+R2_4
+http://fr.farnell.com/te-connectivity/crgh1206f470k/resistance-puissance-470k-0-5w/dp/2332175
+0.0375
+1
+10
+
+resistor 121K
+R3
+http://fr.farnell.com/multicomp/mc0125w12061121k/resistance-1206-121k-1/dp/2142292
+0.0568
+1
+5
