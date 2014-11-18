@@ -111,6 +111,14 @@ Disadvantages are the price (13 euros per IC) and the need for
 2 more external mosfets and a sense resistor. But all the ouput
 requirement fit on a single PCB.
 
+Selecting the mosfet:
+For both mofsets, select a maximum junction temperature, t_j_hot. This allows to compute
+r_ds_on_hot. Having r_ds_on, we can compute the dissipated power.
+Thus: t_j_hot -> r_ds_on_hot -> power_to_dissipated -> max_ambient_temp
+
+example circuit:
+http://fr.farnell.com/linear-technology/dc1523a/carte-d-eval-ltc3789-buck-boost/dp/2393747
+
 
 [[ up converter ]]
 

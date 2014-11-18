@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -48,6 +48,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -56,6 +57,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
@@ -13795,6 +13797,10 @@ by R. Vogg  15.March.2002</description>
 <text x="45.72" y="128.27" size="1.778" layer="97">TODO: choose C4</text>
 <text x="125.73" y="116.84" size="1.778" layer="97">TODO: choose C5</text>
 <text x="16.51" y="53.34" size="1.778" layer="97">TODO: connect RUN to switch</text>
+<text x="173.99" y="46.99" size="1.778" layer="97">TODO: sqj886ep-t1-ge3</text>
+<text x="173.99" y="33.02" size="1.778" layer="97">TODO: si4840bdy</text>
+<text x="172.72" y="5.08" size="1.778" layer="97">TODO: si4840bdy</text>
+<text x="172.72" y="-16.51" size="1.778" layer="97">TODO: si4840bdy</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="83.82" y="80.01"/>
