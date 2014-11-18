@@ -50,11 +50,11 @@ http://fr.farnell.com/te-connectivity/crgh1206f470k/resistance-puissance-470k-0-
 10
 
 resistor 121K
-R3
+R3,R12
 http://fr.farnell.com/multicomp/mc0125w12061121k/resistance-1206-121k-1/dp/2142292
 0.0568
-1
-5
+2
+10
 
 resistor 0.01
 R4
