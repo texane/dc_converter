@@ -12337,7 +12337,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206K" value="1u"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206K" value="4.7u"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C1206K" value="2.2u"/>
-<part name="C8" library="rcl" deviceset="C-EU" device="C1206K" value="47u"/>
+<part name="C8_0" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R1206" value="0.01"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C1206K" value="0.22u"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="C1206K" value="0.22u"/>
@@ -12354,6 +12354,10 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <part name="Q4" library="transistor-power" deviceset="N-MOSFET-SO8" device="S"/>
 <part name="Q1" library="transistor-fet" deviceset="SQJ886EP" device=""/>
 <part name="C7" library="Panasonic-EEEFT_EEEH" deviceset="EEE-" device="-CASE-G" technology="FT1H331AP" value="330UF"/>
+<part name="C8_1" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
+<part name="C8_2" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
+<part name="C8_3" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
+<part name="C8_4" library="rcl" deviceset="C-EU" device="C1206K" value="10u"/>
 </parts>
 <sheets>
 <sheet>
@@ -12403,7 +12407,7 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <attribute name="NAME" x="155.956" y="-0.381" size="1.778" layer="95" align="top-right"/>
 <attribute name="VALUE" x="155.956" y="-5.461" size="1.778" layer="96" align="top-right"/>
 </instance>
-<instance part="C8" gate="G$1" x="157.48" y="45.72" smashed="yes">
+<instance part="C8_0" gate="G$1" x="157.48" y="45.72" smashed="yes">
 <attribute name="NAME" x="156.464" y="48.641" size="1.778" layer="95" align="top-right"/>
 <attribute name="VALUE" x="156.464" y="42.291" size="1.778" layer="96" align="top-right"/>
 </instance>
@@ -12442,6 +12446,22 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <instance part="C7" gate="A" x="165.1" y="-22.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="167.8686" y="-29.5656" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="168.275" y="-26.0096" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="C8_1" gate="G$1" x="165.1" y="45.72" smashed="yes">
+<attribute name="NAME" x="164.084" y="48.641" size="1.778" layer="95" align="top-right"/>
+<attribute name="VALUE" x="164.084" y="42.291" size="1.778" layer="96" align="top-right"/>
+</instance>
+<instance part="C8_2" gate="G$1" x="172.72" y="45.72" smashed="yes">
+<attribute name="NAME" x="171.704" y="48.641" size="1.778" layer="95" align="top-right"/>
+<attribute name="VALUE" x="171.704" y="42.291" size="1.778" layer="96" align="top-right"/>
+</instance>
+<instance part="C8_3" gate="G$1" x="180.34" y="45.72" smashed="yes">
+<attribute name="NAME" x="179.324" y="48.641" size="1.778" layer="95" align="top-right"/>
+<attribute name="VALUE" x="179.324" y="42.291" size="1.778" layer="96" align="top-right"/>
+</instance>
+<instance part="C8_4" gate="G$1" x="187.96" y="45.72" smashed="yes">
+<attribute name="NAME" x="186.944" y="48.641" size="1.778" layer="95" align="top-right"/>
+<attribute name="VALUE" x="186.944" y="42.291" size="1.778" layer="96" align="top-right"/>
 </instance>
 </instances>
 <busses>
@@ -12514,13 +12534,30 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <label x="132.08" y="113.03" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="40.64" x2="157.48" y2="24.13" width="0.1524" layer="91"/>
+<pinref part="C8_0" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="40.64" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="38.1" x2="157.48" y2="24.13" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="24.13" x2="172.72" y2="24.13" width="0.1524" layer="91"/>
 <label x="167.64" y="24.13" size="1.778" layer="95"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="24.13" x2="157.48" y2="0" width="0.1524" layer="91"/>
 <junction x="157.48" y="24.13"/>
+<pinref part="C8_4" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="38.1" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="38.1" x2="187.96" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="38.1" x2="187.96" y2="40.64" width="0.1524" layer="91"/>
+<junction x="157.48" y="38.1"/>
+<pinref part="C8_3" gate="G$1" pin="2"/>
+<wire x1="180.34" y1="40.64" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
+<junction x="180.34" y="38.1"/>
+<pinref part="C8_2" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="40.64" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<junction x="172.72" y="38.1"/>
+<pinref part="C8_1" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="40.64" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
+<junction x="165.1" y="38.1"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -12605,16 +12642,33 @@ EAGLE CAD Libraries on element14&lt;/a&gt;</description>
 <label x="36.83" y="118.11" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C8_0" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="55.88" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="55.88" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="55.88" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="50.8" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="55.88" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <junction x="157.48" y="55.88"/>
 <label x="167.64" y="55.88" size="1.778" layer="95"/>
 <wire x1="139.7" y1="53.34" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
 <junction x="139.7" y="55.88"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="C8_4" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="50.8" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="50.8" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="50.8" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="50.8" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+<junction x="157.48" y="50.8"/>
+<pinref part="C8_3" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="48.26" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
+<junction x="180.34" y="50.8"/>
+<pinref part="C8_2" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="48.26" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
+<junction x="172.72" y="50.8"/>
+<pinref part="C8_1" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="48.26" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
+<junction x="165.1" y="50.8"/>
 </segment>
 </net>
 <net name="SENSE-" class="0">

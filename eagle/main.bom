@@ -126,6 +126,27 @@ http://fr.farnell.com/panasonic-electronic-components/eeeft1h331ap/condensateur-
 1
 4
 
+capacitor 10u
+C8
+http://fr.farnell.com/avx/12065z106kat2a/capa-ceramique-10uf-50v-x7s-1206/dp/2382682
+0.347
+5
+10
+
+capacitor 2.2u
+C6
+http://fr.farnell.com/murata/grm31cr71h225ka88l/condensateur-1206-x7r-50v-2-2uf/dp/1797017
+0.197
+1
+10
+
+capacitor 220n
+C12,C13
+http://fr.farnell.com/avx/12065c224kat2a/condensateur-1206-220nf-50v-x7r/dp/1327724
+0.253
+2
+10
+
 inductor 6.8u
 L1
 http://fr.farnell.com/wurth-elektronik/7443320680/inductor-6-8uh-13a-20/dp/1848236
