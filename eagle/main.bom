@@ -91,6 +91,41 @@ http://fr.farnell.com/kemet/c1206c682j2gacauto/condensateur-mlcc-c0g-6800pf-200v
 1
 4
 
+capacitor 1n
+C2
+http://fr.farnell.com/avx/12065a102fat2a/condens-ceramique-1000pf-50v-c0g/dp/2332859
+0.572
+1
+4
+
+capacitor 3.3n
+C3
+http://fr.farnell.com/avx/12065c332kat2a/condensateur-3300pf/dp/498622
+0.215
+1
+10
+
+capacitor 1u
+C4
+http://fr.farnell.com/avx/12065g105zat2a/condensateur-ceramique-1uf-50v5v/dp/2332886
+0.312
+1
+5
+
+capacitor 4.7u
+C5
+http://fr.farnell.com/murata/grm31cf51h475za01l/cap-mlcc5v-4-7uf-50v-1206/dp/1828858
+0.206
+1
+10
+
+capacitor 330u
+C7
+http://fr.farnell.com/panasonic-electronic-components/eeeft1h331ap/condensateur-cms-50v-330uf/dp/1868428
+1.04
+1
+4
+
 inductor 6.8u
 L1
 http://fr.farnell.com/wurth-elektronik/7443320680/inductor-6-8uh-13a-20/dp/1848236
