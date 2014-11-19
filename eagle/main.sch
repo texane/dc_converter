@@ -12783,8 +12783,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="R13" library="resistor" deviceset="R-EU_" device="R1206" value="280K"/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="R1206" value="65K"/>
 <part name="D5" library="diode" deviceset="BZX84" device=""/>
-<part name="POW_IN" library="con-ptr500" deviceset="AK300/2" device=""/>
-<part name="POW_OUT" library="con-ptr500" deviceset="AK300/2" device=""/>
+<part name="CON_PIN" library="con-ptr500" deviceset="AK300/2" device=""/>
+<part name="CON_POUT" library="con-ptr500" deviceset="AK300/2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12899,10 +12899,10 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <attribute name="NAME" x="31.115" y="44.45" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="34.29" y="40.64" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="POW_IN" gate="-1" x="8.89" y="20.32"/>
-<instance part="POW_IN" gate="-2" x="8.89" y="15.24"/>
-<instance part="POW_OUT" gate="-1" x="10.16" y="5.08"/>
-<instance part="POW_OUT" gate="-2" x="10.16" y="0"/>
+<instance part="CON_PIN" gate="-1" x="8.89" y="20.32"/>
+<instance part="CON_PIN" gate="-2" x="8.89" y="15.24"/>
+<instance part="CON_POUT" gate="-1" x="10.16" y="5.08"/>
+<instance part="CON_POUT" gate="-2" x="10.16" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -13028,12 +13028,12 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="3.81" y1="34.29" x2="3.81" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="POW_IN" gate="-2" pin="KL"/>
+<pinref part="CON_PIN" gate="-2" pin="KL"/>
 <wire x1="13.97" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 <label x="15.24" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POW_OUT" gate="-2" pin="KL"/>
+<pinref part="CON_POUT" gate="-2" pin="KL"/>
 <wire x1="15.24" y1="0" x2="21.59" y2="0" width="0.1524" layer="91"/>
 <label x="16.51" y="0" size="1.778" layer="95"/>
 </segment>
@@ -13094,7 +13094,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <segment>
 <wire x1="15.24" y1="5.08" x2="21.59" y2="5.08" width="0.1524" layer="91"/>
 <label x="15.24" y="5.08" size="1.778" layer="95"/>
-<pinref part="POW_OUT" gate="-1" pin="KL"/>
+<pinref part="CON_POUT" gate="-1" pin="KL"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -13143,7 +13143,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <label x="0" y="52.07" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POW_IN" gate="-1" pin="KL"/>
+<pinref part="CON_PIN" gate="-1" pin="KL"/>
 <wire x1="13.97" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <label x="16.51" y="20.32" size="1.778" layer="95"/>
 </segment>
