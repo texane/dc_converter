@@ -22,10 +22,10 @@ http://fr.farnell.com/bourns/cr1206-fx-2002elf/resistance-cms/dp/2333527
 5
 
 resistor 64K9
-R2_1
+R2_1,R14
 http://fr.farnell.com/multicomp/mc0125w1206164k9/resistance-1206-64k9-1/dp/2142281
 0.0568
-1
+2
 5
 
 resistor 110K
@@ -36,10 +36,10 @@ http://fr.farnell.com/vishay-draloric/crcw1206110kfkea/resistance-couche-epaisse
 5
 
 resistor 280K
-R2_3
+R2_3,R13
 http://fr.farnell.com/panasonic-electronic-components/erjp08f2803v/resis-couche-epaisse-280-kohm-0/dp/2327145
 0.055
-1
+2
 25
 
 resistor 470K
@@ -187,4 +187,11 @@ D3, D4
 http://fr.farnell.com/diodes-inc/b240a-13-f/diodeschottky40v2asma/dp/1843669
 0.53
 2
+5
+
+zener diode
+D5
+http://fr.farnell.com/multicomp/bzx84c5v1/diode-zener-0-3w-sot-23/dp/1466605
+0.159
+1
 5
