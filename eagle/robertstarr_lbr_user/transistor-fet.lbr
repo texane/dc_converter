@@ -936,10 +936,10 @@ by R. Vogg  15.March.2002</description>
 <wire x1="2.8575" y1="3.175" x2="2.8575" y2="-3.175" width="0.2032" layer="21"/>
 <wire x1="2.8575" y1="-3.175" x2="-2.8575" y2="-3.175" width="0.2032" layer="51"/>
 <circle x="-1.905" y="-4.2863" radius="0.3175" width="0" layer="21"/>
-<smd name="3" x="0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="4" x="1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="2" x="-0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="1" x="-1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
+<smd name="3" x="0.635" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="4" x="1.905" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="2" x="-0.635" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="1" x="-1.905" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
 <smd name="5-8" x="0" y="1.905" dx="5.08" dy="4.318" layer="1"/>
 <text x="-3.4925" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.2225" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R180">&gt;VALUE</text>

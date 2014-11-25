@@ -10061,17 +10061,17 @@ GDSB: gate, drain, source, bulk&lt;p&gt;
 &lt;p&gt;
 by R. Vogg  15.March.2002</description>
 <packages>
-<package name="POWERPAK-SO-08">
-<description>&lt;b&gt;PowerPAK SO-8&lt;/b&gt;&lt;p&gt;</description>
+<package name="POWERPAK-SO-08L">
+<description>&lt;b&gt;PowerPAK SO-8L&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-2.8575" y1="-3.175" x2="-2.8575" y2="3.175" width="0.2032" layer="21"/>
 <wire x1="-2.8575" y1="3.175" x2="2.8575" y2="3.175" width="0.2032" layer="51"/>
 <wire x1="2.8575" y1="3.175" x2="2.8575" y2="-3.175" width="0.2032" layer="21"/>
 <wire x1="2.8575" y1="-3.175" x2="-2.8575" y2="-3.175" width="0.2032" layer="51"/>
 <circle x="-1.905" y="-4.2863" radius="0.3175" width="0" layer="21"/>
-<smd name="3" x="0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="4" x="1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="2" x="-0.635" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
-<smd name="1" x="-1.905" y="-2.8575" dx="0.635" dy="1.778" layer="1" rot="R180"/>
+<smd name="3" x="0.635" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="4" x="1.905" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="2" x="-0.635" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
+<smd name="1" x="-1.905" y="-3.0575" dx="0.635" dy="2.378" layer="1" rot="R180"/>
 <smd name="5-8" x="0" y="1.905" dx="5.08" dy="4.318" layer="1"/>
 <text x="-3.4925" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.2225" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R180">&gt;VALUE</text>
@@ -10123,7 +10123,7 @@ by R. Vogg  15.March.2002</description>
 <gate name="G$1" symbol="MFN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="POWERPAK-SO-08">
+<device name="" package="POWERPAK-SO-08L">
 <connects>
 <connect gate="G$1" pin="D" pad="5-8"/>
 <connect gate="G$1" pin="G" pad="4"/>
@@ -12792,7 +12792,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <text x="-8.89" y="-7.62" size="1.778" layer="97">schema adapted from doc/ltc3789.pdf, fig. 13</text>
 <text x="-5.08" y="100.33" size="1.778" layer="97">r2 = vout * r1 / 0.8 - r1</text>
 <text x="-5.08" y="97.79" size="1.778" layer="97">3.4V, 5.2V, 12V, 19.6V</text>
-<text x="119.38" y="66.04" size="1.778" layer="97">TODO: q1 sqj886ep-t1-ge3 package is powerpak-so8, not powerpak-so8-l</text>
 <text x="119.38" y="58.42" size="1.778" layer="97">NOTE: D3, D4 are B240A</text>
 <text x="163.83" y="119.38" size="1.778" layer="97">NOTE: D1, D2 are DFLS160</text>
 <text x="119.38" y="60.96" size="1.778" layer="97">NOTE: Q2, Q3, Q4 are SI4840BDY</text>
