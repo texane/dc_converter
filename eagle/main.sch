@@ -12845,7 +12845,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="177.8" y="26.67" size="1.778" layer="97">NOTE: Q1 is SQJ886EP-T1-GE3</text>
 <text x="133.35" y="-25.4" size="1.778" layer="97">https://github.com/texane/dc_converter</text>
 <text x="133.35" y="-29.21" size="1.778" layer="97">texane@gmail.com</text>
-<text x="133.35" y="-33.02" size="1.778" layer="97">NOTE: Q1 is SQJ886EP-T1-GE3</text>
+<text x="133.35" y="-33.02" size="1.778" layer="97">master 4a76bff</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="83.82" y="80.01"/>
