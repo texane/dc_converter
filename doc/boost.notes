@@ -1,6 +1,27 @@
+Circuit analysis, 2 operating modes:
+. continuous inductor: the switch is closed and current flows continuously
+through the inductor
+. discontinuous inductor: switch opened, no current flows in the inductor
+
+In a boost power stage, the output voltage depends on the switching duty
+cycle and the input voltage.
+
+Principle of inductor volt second balance: in steady state, during both
+cycles the total change in inductor current is 0.
+
+Inductor current ripple:
+
+
+[ references ]
+slva061.pdf: understanding boost power stages in switched mode power supplies
+
+
+
+[ toread ]
 http://www.learnabout-electronics.org/PSU/psu32.php
 http://thesolarpowerexpert.com/introducing-the-v4-charge-controller/
 http://fr.wikipedia.org/wiki/Convertisseur_Boost
+http://www.onmyphd.com/?p=voltage.regulators.buck.step.down.converter
 
 http://www.ti.com/lit/an/sloa127/sloa127.pdf
 
